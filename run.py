@@ -17,7 +17,7 @@ def load_model_from_config(config, ckpt):
 
 def get_model():
     config = OmegaConf.load("configs/latent-diffusion/cin256-v2.yaml")
-    model = load_model_from_config(config, "models/ldm/cin256-v2/model.ckpt")
+    model = load_model_from_config(config, "pre-trained/cin256-v2/model.ckpt")
     return model
 
 
